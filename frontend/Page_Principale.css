@@ -1,0 +1,188 @@
+#MonBoutonConnexion, #MonBoutonInscription, #MonBoutonDeconnexion, #MonBoutonNouveauDeck {
+    height: 36px;
+    width: 140px;
+    font-size: 1.1em;
+    margin-right: 15px;
+}
+
+#Boutons_Connexion, #MonBoutonNouveauDeck, #Utilisateur_Connecte {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+
+#Boutons_Connexion, #Utilisateur_Connecte {
+    right: 0%;
+}
+
+#Boutons_Connexion {
+    width: 320px
+}
+
+#MesInfosUtilisateur {
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+#MonBoutonNouveauDeck {
+    left: 80px;
+}
+
+#DivNouveauDeck {
+    border: solid;
+    border-color: var(--main-color2);
+    border-radius: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+
+#BarreNomNouveauDeck, #MonBoutonCreer {
+    font-size: 1.1em;
+}
+
+#MesInfosUtilisateur {
+    margin-right: 10px;
+}
+
+#TousLesDecks, #MesDecks {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: center;
+}
+
+.Class_Deck, .Div_Img_Deck {
+    height: 315px;
+}
+
+.Class_Deck, .Div_Img_Deck, .MyDivPackage {
+    width: 270px;
+}
+
+.Class_Deck {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.Img_Deck {
+    border-radius: 15px;
+    max-width: 220px;
+    max-height: 305px;
+    z-index: 0;
+}
+
+.Div_Img_Deck, .MyDivPackage {
+    position: relative;
+    left: 0px;
+}
+
+.Div_Img_Deck{
+    top: 0px;
+}
+
+.MyDivPackage {
+    bottom: 200px;
+    height: 200px;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgb(60, 60, 80) 150px) no-repeat;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.Nom_Deck {
+    position: relative;
+    width: 270px;
+    height: 50px;
+    top: 150px;
+    left: 0px;
+}
+
+.Format_1_Bouton_Ouvrir, .Format_2_Boutons_Ouvrir, .Format_2_Boutons_Suppr {
+    position: relative;
+    height: 50px;
+    top: 150px;
+}
+
+.Format_2_Boutons_Ouvrir, .Format_2_Boutons_Suppr {
+    width: 135px;
+}
+
+.Format_1_Bouton_Ouvrir {
+    width: 270px;
+}
+
+.Format_1_Bouton_Ouvrir, .Format_2_Boutons_Ouvrir {
+    left: 0px;
+}
+
+.Format_2_Boutons_Suppr {
+    left: 135px;
+    top: 100px;
+}
+
+.Div_Img_Deck {
+    background-color: rgb(0, 0, 0);
+}
+
+.Nom_Deck, .Format_1_Bouton_Ouvrir, .Format_2_Boutons_Ouvrir, .Format_2_Boutons_Suppr {
+    background-color: rgb(60, 60, 80);
+}
+
+.Nom_Deck, .Format_1_Bouton_Ouvrir, .Format_2_Boutons_Ouvrir, .Format_2_Boutons_Suppr, .Div_Img_Deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nom_Deck, .Format_1_Bouton_Ouvrir, .Format_2_Boutons_Ouvrir, .Format_2_Boutons_Suppr {
+    color:var(--main-color);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.Class_Deck:hover .MyDivPackage {
+    height: 250px;
+    bottom: 250px;
+}
+
+.Format_1_Bouton_Ouvrir:hover, .Format_2_Boutons_Ouvrir:hover{
+    background-color: var(--color-hover);
+}
+
+.Format_2_Boutons_Suppr:hover{
+    background-color: var(--color-hover);
+    color:rgb(180, 0, 0)
+}
+
+.Titre_Case {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    height: 60px;    
+}
+
+.Titre {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 5px;
+    color:var(--main-color2);
+}
+
+.Trait {
+    height: 5px;
+    width: 300px;
+    transition: 0.5s;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--main-color2) 50%, rgba(255,255,255,0) 100%); 
+}
+
+.BigPackage:hover .Trait {
+    width: 500px;
+}

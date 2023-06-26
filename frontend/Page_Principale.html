@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Page Principale</title>
+        <link href="CSS_Général.css" rel="stylesheet">
+        <link href="Page_Principale.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    </head>
+    <body id="MonBody">
+        <header>
+                <a href="Page_Principale.html"> <img id="MonLogo" src="Logo.png"> </a>
+                <span id="Boutons_Connexion">
+                    <a href="Page_Connexion.html"><input id="MonBoutonConnexion" type="button" value="Connexion"></a>
+                    <a href="Page_Inscription.html"><input id="MonBoutonInscription" type="button" value="Inscription"></a>
+                </span>
+                <input id="MonBoutonNouveauDeck" type="button" value="Nouveau Deck">
+                <span id="Utilisateur_Connecte">
+                    <span id="MesInfosUtilisateur"></span>
+                    <input id="MonBoutonDeconnexion" type="button" value="Déconnexion">
+                </span>
+                <div id="DivNouveauDeck">
+                    <input id="BarreNomNouveauDeck" type="text" name="BarreNouveauDeck" placeholder="Nom du deck...">
+                    <input id="MonBoutonCreer" type="button" value="Créer">
+                </div>
+            </header>
+        <div class="BigPackage">
+            <div class="Titre_Case">
+                <div class="Titre">Mes Decks</div>
+                <div class="Trait"></div>
+            </div>
+            <div id="MesDecks"></div>
+        </div>
+        <div class="BigPackage">
+            <div class="Titre_Case">
+                <div class="Titre">Tous les Decks</div>
+                <div class="Trait"></div>
+            </div>
+            <div id="TousLesDecks"></div>
+        </div>
+        <script src="Page_Principale.js"></script>
+        <script src="Page_Deck.js"></script> <!-- Pour avoir la fonction tri par ordre alphabétique -->
+    </body>
+</html>

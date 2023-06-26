@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Inscription</title>
+        <link href="Page_Connexion-Inscription.css" rel="stylesheet">
+        <link href="CSS_Général.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="Page_Principale.html"> <img id="MonLogo" src="Logo.png"> </a>
+            </nav>
+        </header>
+        <div id="MesInfos">
+            <div class="Texte_Connexion">Pseudo</div>
+            <input class="Barre_Connexion" type="text" name="pseudo" id="MonPseudoInscription" required>
+            <div class="Texte_Connexion">Mot de passe</div>
+            <input class="Barre_Connexion" type="password" name="mdp" id="MonMdpInscription" required><br>
+            <div id="MonMessageInscription"></div>
+            <input id="MonBoutonInscription" type="button" value="Inscription">
+        </div>
+        <script src="Page_Inscription.js"></script>
+    </body>
+</html>

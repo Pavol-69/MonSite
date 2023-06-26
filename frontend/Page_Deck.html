@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Création Deck</title>
+        <link href="CSS_Général.css" rel="stylesheet">
+        <link href="Page_Deck.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    </head>
+    <body id="MonBody">
+        <header>
+            <a href="Page_Principale.html"> <img id="MonLogo" src="Logo.png"></a>
+            <div id="MonBoutonMenuRecherche" class="Bouton_Header">Rechercher</div>
+            <div id="MonBoutonClassementType" class="Bouton_Header">Classer par Type</div>
+            <div id="MonBoutonClassementCat" class="Bouton_Header">Classer par Catégorie</div>
+            <div id="MonBoutonClassementCMC" class="Bouton_Header">Classer par CMC</div>
+        </header>
+        <div id="MyMainField"></div>
+        <div id="MenuRecherche">
+            <div id="MaCaseRecherche">
+                <div id="Bandeau_Recherche">
+                    <div id="Recherche_Bouton_Fermer" class="BoutonFermer">X</div>
+                    <div id="TitreBarre">Nom de la carte à rechercher</div>
+                    <input type="text" id="MaBarre">
+                    <div id="TitreTypeCarte">Type de Carte</div>
+                    <div id="MesSuggestions"></div>
+                    <select id="RechercheTypeCarte">
+                        <option value="All">Toute</option>
+                        <option value="Creature">Créature</option>
+                        <option value="Enchantment">Enchantement</option>
+                        <option value="Sorcery">Rituel</option>
+                        <option value="Instant">Ephémère</option>
+                        <option value="Land">Terrain</option>
+                    </select>
+                    <div id="CouleurCarte">Couleur de la Carte</div>
+                    <img src="Blanc.png" id="W" class="Couleur">
+                    <img src="Bleu.png" id="U" class="Couleur">
+                    <img src="Noir.png" id="B" class="Couleur">
+                    <img src="Rouge.png" id="R" class="Couleur">
+                    <img src="Vert.png" id="G" class="Couleur">
+                    <img src="Incolore.png" id="I" class="Couleur">
+                    <div id="Bouton_Reinitialisation">Réinitialisation</div>
+                    <div id="Bouton_Rechercher">Rechercher</div>
+                </div>
+                <div id="Resultat_Recherche"></div>
+            </div>
+        </div>
+        <script src="Page_Deck.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+#MesInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+#MonBoutonConnexion, #MonBoutonInscription {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    margin-top: 35px;
+}
+
+.Barre_Connexion{
+    height: 30px;
+    width: 300px;
+    font-size: 1.5em;
+}
+
+.Texte_Connexion{
+    font-size: 1.5em;
+    margin-top: 15px;
+}
